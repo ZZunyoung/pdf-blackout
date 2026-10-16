@@ -1,0 +1,21 @@
+{
+  "name": "pdf-blackout",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "mupdf": "1.28.1",
+    "tesseract.js": "6.0.1",
+    "@tesseract.js-data/eng": "1.0.0",
+    "@tesseract.js-data/kor": "1.0.0"
+  },
+  "license": "AGPL-3.0-or-later",
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "prepare:assets": "node scripts/prepare-assets.mjs",
+    "test": "node --test tests/pdf-core.test.mjs"
+  },
+  "description": "브라우저에서 이미지와 글자를 확인하고 선택 영역을 실제 삭제하는 PDF 도구",
+  "engines": {
+    "node": ">=20"
+  }
+}
